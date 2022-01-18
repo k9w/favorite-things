@@ -3,13 +3,19 @@ $(document).ready(function() {
     event.preventDefault();
     const foodInput = $("#food").val();
     const showInput = $("#show").val();
-    const brandInput = $("#brand").val();
+    const phoneBrandInput = $("#phoneBrand").val();
   
     $(".food").append(foodInput);
     $(".show").append(showInput);
-    $(".brand").append(brandInput);
+    $(".phoneBrand").append(phoneBrandInput);
 
     $("#results").show();
+
+    let foodArray = ["burrito", "taco"]
+
+    let showArray = ["survivor", "chopped"]
+
+    let phoneBrandArray = ["apple", "android"]
 
   });
 });
