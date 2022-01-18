@@ -1,5 +1,5 @@
-$(document).ready(funtion() {
-  $("form#survey").submit(funtion(event) {
+$(document).ready(function() {
+  $("form#survey").submit(function(event) {
     event.preventDefault();
     const foodInput = $("#food").val();
     const showInput = $("#show").val();
@@ -8,6 +8,8 @@ $(document).ready(funtion() {
     $(".food").append(foodInput);
     $(".show").append(showInput);
     $(".brand").append(brandInput);
+
+    $("#results").show();
 
   });
 });
