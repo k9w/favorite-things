@@ -11,11 +11,28 @@ $(document).ready(function() {
 
     $("#results").show();
 
-    let foodArray = ["burrito", "taco"]
+    const foodArray = ["burrito", "taco"];
+    let doubledFoodArray = [];
+    foodArray.forEach(function(element) {
+      doubledFoodArray.push(element + 2);
+    });
+    
+    let foodSelectedArray = ["burrito", "taco"];
+    showSelectedArray.push(foodSelectedArray[1]); // "taco"
+    showSelectedArray.push("chopped");
+    
+    
+    const showArray = ["survivor", "chopped"];
+    let doubledShowArray = [];
+    showArray.forEach(function(element) {
+      doubledShowArray.push(element + 2);
+    });
 
-    let showArray = ["survivor", "chopped"]
-
-    let phoneBrandArray = ["apple", "android"]
+    const phoneBrandArray = ["apple", "android"];
+    let doubledPhoneBrandArray = [];
+    phoneBrandArray.forEach(function(element) {
+      doubledPhoneBrandArray.push(element + 2);
+    });
 
   });
 });
